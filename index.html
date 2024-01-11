@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ефір Гармонії - New Age Радіо</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: url('your_background_image.jpg') no-repeat center center fixed; 
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            color: #fff;
+            overflow: hidden;
+        }
+
+        .container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start; /* Підняти контент ближче до верху */
+            align-items: center;
+            text-align: center;
+            padding-top: 10vh; /* Зменшений відступ зверху */
+        }
+
+        .header .title {
+            font-size: 4rem;
+            font-weight: 300;
+            margin-bottom: 1rem; /* Відступ між заголовком і плеєром */
+            color: #76b900;
+            text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+            animation: colorChange 10s infinite; /* Анімація зміни кольору */
+        }
+
+        .radio-player {
+            width: 250px; /* Фіксована ширина для звуженого вигляду */
+            border: none; /* Виправлення рамки */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: rgba(10, 10, 10, 0.9);
+            width: 100%;
+            position: absolute; /* Футер завжди внизу */
+            bottom: 0;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        footer .email-link {
+            color: #76b900;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        @keyframes colorChange {
+            0% { color: #ff2d55; }
+            50% { color: #ffffff; }
+            100% { color: #4cd964; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="title">Ефір Гармонії</h1>
+        </header>
+        <iframe class="radio-player" src="https://stream.zeno.fm/708nkxeeep9uv" frameborder="0"></iframe>
+    </div>
+    <footer>
+        <p>Зв'язатися з нами: <a href="mailto:EfirHarmonii@proton.me" class="email-link">EfirHarmonii@proton.me</a></p>
+        <p>© 2024 Ефір Гармонії. Всі права захищені.</p>
+    </footer>
+</body>
+</html>
